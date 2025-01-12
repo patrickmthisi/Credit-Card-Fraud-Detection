@@ -1,5 +1,5 @@
 # Credit-Card-Fraud-Detection
-
+## Project aims and descriptions:
 In this project, a set of cost-sensitive/weighted machine-learning algorithms was employed to predict fraudulent credit cards. The dataset is highly skewed, with fraud cases accounting for only 0.172% of the examined data.  In addition, l also explored data sampling approaches used to address class imbalances. These include but are not limited to, versions of SMOTE (SVMSMOTE and BorderlineSMOTE, ADASYN, and combinations that harness the benefits of undersampling the majority class using TOMEK links or ENN.
 
  Data for the project was sourced from: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud.
