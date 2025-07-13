@@ -3,7 +3,7 @@
 ## OBJECTIVES: 
 
 In this project, we investigated a suite of weighted machine learning methods that are commonly used to address skewed class distributions. Also investigated are data sampling approaches to address class imbalance. The following aspects are addressed in this project:
-- Exploring the credit card dataset using the Dtale Exploratory Data Explorer.
+- Exploring the credit card dataset using the Dtale Explanatory Data Explorer.
 - Framing the fraud detection problem, developing a test harness, and evaluating the baseline model. 
 - Exploring a set of weighted machine learning algorithms and ensembles.
 - Exploring a suite of data sampling methods to address class imbalance.
