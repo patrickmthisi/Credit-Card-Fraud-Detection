@@ -1,12 +1,16 @@
 # Credit-Card-Fraud-Detection
 ## Project aims and descriptions:
-In this project, a set of cost-sensitive/weighted machine-learning algorithms was employed to predict fraudulent credit cards. The dataset is highly skewed, with fraud cases accounting for only 0.172% of the examined data.  In addition, l also explored data sampling approaches used to address class imbalances. These include but are not limited to, versions of SMOTE (SVMSMOTE and BorderlineSMOTE, ADASYN, and combinations that harness the benefits of undersampling the majority class using TOMEK links or ENN.
+# OBJECTIVES: 
 
- Data for the project was sourced from: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud.
+In this project, we investigated a suite of weighted machine learning methods that are commonly used to address skewed class distributions. Also investigated are data sampling approaches to address class imbalance. The following aspects are addressed in this project:
+- Exploring the credit card dataset using Dtale explanator data explorer.
+- Framing the fraud detection problem, developing a test harness and evaluating the baseline model. 
+- Exploring a set of weighted machine learning algorithms and ensembles.
+- Exploring a suite of data sampling methods to address class imbalance.
+- In imbalanced classification problems such as fraud detection, the cost of misclassifying a fraudulent transaction as non-fraudulent (a false negative, FN) is typically higher than misclassifying a legitimate transaction as fraudulent (a false positive, FP). As a result, this project prioritizes optimizing recall—the true positive rate—to maximize the detection of fraudulent cases, even if it comes at the expense of precision. This reflects a deliberate trade-off that favors identifying as many true frauds as possible, accepting a higher false alarm rate.
+- Implementing Bayesian hyperparameter searching based on the recall score to get a better coverage of fraudulent transactions.
+- Determining the optimal threshold based on F2-measure:
+$$\text{F2-measure} = \frac{(1 + 2^2) \times (\text{precision} \times \text{recall})}{(2^2 \times \text{precision} + \text{recall})}$$
 
- ## Conclusion and recommendations:
- - In this highly skewed dataset, the voting ensemble produced the highest performance score, achieving an ROC AUC of 0.974 and a PR AUC of 0.794. Utilizing this model as a baseline, we evaluated various sampling methods, including SMOTE and SMOTETomek, to address the challenges posed by class imbalance. While the ROC AUC remained consistent across the different sampling techniques, SMOTE delivered the most significant improvement in PR AUC, rising to 0.810, an increase from the initial score of 0.794.
-
-- The machine learning algorithms that we employed in this project used default parameters. Performance can be enhanced by employing grid search to determine the best parameters. 
-
-- One can explore one-class algorithms in this work as well. The ones that l can think of are isolation forests or one-class support vector machines. Due to the severe class imbalance, we believe these algorithms could yield very interesting and useful results. 
+   - This metric applies more weight to recall to limit FN, i.e., legitimate fraud cases misclassified as non-fraud, and
+- Finalising and potential improvements.
