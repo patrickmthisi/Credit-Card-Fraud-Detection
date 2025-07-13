@@ -13,6 +13,8 @@ In this project, we investigated a suite of weighted machine learning methods th
 
   $$\text{F2-measure} = \frac{(1 + 2^2) \times (\text{precision} \times \text{recall})}{(2^2 \times \text{precision} + \text{recall})}$$
 
+  ![optimal threshold](optimal_threshold.png)
+
    - This metric applies more weight to recall to limit FN, i.e., legitimate fraud cases misclassified as non-fraud, and
 - Finalising and potential improvements.
 
