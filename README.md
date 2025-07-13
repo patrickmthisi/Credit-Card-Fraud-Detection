@@ -17,10 +17,14 @@ In this project, we investigated a suite of weighted machine learning methods th
 - Finalising and potential improvements.
 
 ## Conclusion and recommendation
-- In this highly skewed fraud investigation dataset, the SMOTE + LGMClassifier pipeline produced the highest recall score without causing a significant deterioration in other metrics considered, achieving a recall of 0.867 and pr AUC of 0.846. As we are interested in attaining more coverage of fraudulent cases, we implemented Bayesian hyperparameter optimisation, using negative recall as the objective function (i.e., $$\text{min} \big(-f(x)\big) = \text{max} \big(f(x)\big)$$). 
+- In this highly skewed fraud investigation dataset, the SMOTE + LGMClassifier pipeline produced the highest recall score without causing a significant deterioration in other metrics considered, achieving a recall of 0.867 and pr AUC of 0.846. As we are interested in attaining more coverage of fraudulent cases, we implemented Bayesian hyperparameter optimisation, using negative recall as the objective function (i.e., $$\text{min} \big(-f(x)\big) = \text{max} \big(f(x)\big)$$).
+
+  ![loss evolution](loss_evolution.png)
+
+  
 - Based on the optimal set of hyperparameters, we managed to boost the recall score to 0.908 at the expense of precision. As can be seen from the confusion matrix, our model managed to correctly classify most of the fraudulent causes in the test set.
 
-
+  ![performance evaluation](fraud_eval_res.png)
 
 - Instead of using SMOTE, one could also explore BorderlineSMOTE in further work. Even better, one could optimise recall based on weighted machine learning models, which achieved good performance in this study. It will be interesting to see how the results compare. 
 - Furthermore, one can explore one-class algorithms in this work as well. The ones that l can think of are isolation forests or one-class support vector machines. Due to the severe class imbalance, I believe these algorithms could yield very interesting and useful results.
