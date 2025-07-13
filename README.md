@@ -1,6 +1,6 @@
 # Credit-Card-Fraud-Detection
 ## Project aims and descriptions:
-# OBJECTIVES: 
+## OBJECTIVES: 
 
 In this project, we investigated a suite of weighted machine learning methods that are commonly used to address skewed class distributions. Also investigated are data sampling approaches to address class imbalance. The following aspects are addressed in this project:
 - Exploring the credit card dataset using the Dtale Exploratory Data Explorer.
