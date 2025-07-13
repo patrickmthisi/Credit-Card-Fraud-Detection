@@ -15,7 +15,7 @@ In this project, we investigated a suite of weighted machine learning methods th
 
   ![optimal threshold](optimal_threshold.png)
 
-   - This metric applies more weight to recall to limit FN, i.e., legitimate fraud cases misclassified as non-fraud, and
+   - This metric applies more weight to recall to limit FN, i.e., legitimate fraud cases misclassified as non-fraud.
 - Finalising and potential improvements.
 
 ## Conclusion and recommendation
