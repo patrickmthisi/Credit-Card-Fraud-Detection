@@ -1,4 +1,7 @@
 # Credit-Card-Fraud-Detection
+- $\textbf{Author}$: Patrick Mthisi
+- $\textbf{Contact details}$: patrickmthisi@hotmail.com
+
 ## Project aims and descriptions:
 ## OBJECTIVES: 
 
